@@ -1,5 +1,6 @@
 module.exports = function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
+    context.log('Hi!');
 
     if (req.query.name || (req.body && req.body.name)) {
         context.res = {
